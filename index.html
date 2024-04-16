@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Cadastro de Gastos</h1>
+        <!-- Formulário para adicionar gastos -->
+        <form id="expense-form">
+            <div class="form-group">
+                <label for="category">Categoria:</label>
+                <select id="category" class="form-control">
+                    <option>Alimentação</option>
+                    <option>Transporte</option>
+                    <option>Saúde</option>
+                    <option>Lazer</option>
+                    <option>Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Valor:</label>
+                <input type="number" id="amount" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="date">Data:</label>
+                <input type="date" id="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="description">Descrição:</label>
+                <textarea id="description" class="form-control"></textarea>
+            </div>
+            <button type="submit" onclick="cadastrarGasto()" class="btn btn-primary">Adicionar Gasto</button>
+        </form>
+        <hr>
+        <!-- Área para listar os gastos -->
+        <div id="expenses-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
