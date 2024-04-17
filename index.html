@@ -37,7 +37,19 @@
             <button type="submit" onclick="cadastrarGasto()" class="btn btn-primary">Adicionar Gasto</button>
         </form>
         <hr>
-        <!-- Área para listar os gastos -->
+        <!-- Filtros de categoria -->
+        <div class="form-group">
+            <label for="filter-category">Filtrar por Categoria:</label>
+            <select id="filter-category" class="form-control">
+                <option value="">Todas</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </div>
+        <!-- Lista de gastos -->
         <div id="expenses-list"></div>
     </div>
 
